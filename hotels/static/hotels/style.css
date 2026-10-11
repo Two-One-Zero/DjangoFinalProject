@@ -1,0 +1,65 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: aliceblue;
+    color: black;
+}
+
+header {
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 5px;
+}
+
+header p {
+    margin: 5px;
+}
+
+nav {
+    background-color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: navy;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: steelblue;
+}
+
+section {
+    padding: 15px;
+}
+
+.hotel {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.hotel h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.hotel p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+footer {
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+}

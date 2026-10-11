@@ -1,0 +1,31 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Stay With Us{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'hotels/style.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>STAY WITH US</h1>
+        <p>Find the best places to stay.</p>
+    </header>
+
+    {% include 'hotels/navbar.html' %}
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    {% include 'hotels/footer.html' %}
+
+</body>
+</html>
