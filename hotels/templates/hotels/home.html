@@ -1,31 +1,70 @@
 
-
-{% extends 'hotels/base.html' %}
+{% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Home | Stay With Us{% endblock %}
 
 {% block content %}
-<h2>Popular Destinations</h2>
 
-<div class="hotel">
-    <h3>Boracay</h3>
-    <p>Enjoy the beautiful beaches of Boracay.</p>
+<section class="hero">
+    <div class="hero-text">
+        <p class="script-text">Your Next Getaway</p>
+        <h1>Starts Here</h1>
+        <p>Comfortable stays. Beautiful places.<br>
+        Memories that last.</p>
+    </div>
+</section>
+
+<section class="featured">
+    
+<div class="featured-heading">
+    <h2>Featured Hotels</h2>
+    <a href="{% url 'hotels' %}">View All Hotels →</a>
 </div>
 
-<div class="hotel">
-    <h3>La Union</h3>
-    <p>Discover a relaxing place in La Union.</p>
-</div>
 
-<h2>Recommended Hotels</h2>
+    <div class="hotel-grid">
 
-<div class="hotel">
-    <h3>Oceanview Hotel</h3>
-    <p>Location: Boracay</p>
-    <p>Enjoy a comfortable and relaxing stay.</p>
-</div>
+        <div class="hotel-card">
+            <img src="{% static 'hotels/images/sunset-hotel.jpg' %}" alt="The Sunset Hotel">
+            <div class="hotel-info">
+                <h3>The Sunset Hotel</h3>
+                <p class="location"> San Juan, La Union</p>
+                <p>Relax by the beach and enjoy a peaceful escape.</p>
+            </div>
+        </div>
+
+        <div class="hotel-card">
+            <img src="{% static 'hotels/images/ocean-breeze.jpg' %}"   alt="Ocean Breeze Resort">
+            <div class="hotel-info">
+                <h3>Ocean Breeze Resort</h3>
+                <p class="location"> San fernando, La Union</p>
+                <p>Cozy rooms with a breathtaking view of the ocean.</p>
+            </div>
+        </div>
+
+        <div class="hotel-card">
+            <img src="{% static 'hotels/images/city-lights.jpg' %}" alt="City Lights Hotel">
+            <div class="hotel-info">
+                <h3>City Lights Hotel</h3>
+                <p class="location"> Manila</p>
+                <p>Modern rooms in the heart of the city.</p>
+            </div>
+        </div>
+
+        <div class="hotel-card">
+            <img src="{% static 'hotels/images/mountain-view.jpg' %}" alt="Mountain View Inn">
+            <div class="hotel-info">
+                <h3>Mountain View Inn</h3>
+                <p class="location"> Tagaytay</p>
+                <p>Fresh air, cool weather, and a relaxing stay.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 {% endblock %}
-
 
 
 
