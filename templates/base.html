@@ -16,10 +16,15 @@
 
     {% include 'hotels/navbar.html' %}
 
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
+    <div id = "container">
+        <div id = "main">
+           <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+        </div>
+
+    </div>
 
     {% include 'hotels/footer.html' %}
 
