@@ -1,22 +1,55 @@
 
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Hotels | Stay With Us{% endblock %}
 
 {% block content %}
+
 <section>
-    <h2>Available Hotels</h2>
+    <div class="list">
 
-    <div class="hotel">
-        <h3>Oceanview Hotel</h3>
-        <p>Location: Boracay</p>
-        <p>A comfortable place to enjoy your vacation.</p>
-    </div>
+        <h2 id ="available">Available</h2>
 
-    <div class="hotel">
-        <h3>Sunrise Resort</h3>
-        <p>Location: La Union</p>
-        <p>A relaxing place for family and friends.</p>
+        <article class="item">
+            <img class="photo" src="{% static 'hotels/images/sunset-hotel.jpg' %}" alt="The Sunset Hotel">
+            <div class="details">
+                <h3>The Sunset Hotel</h3>
+                <p>Location: San Juan, La Union</p>
+                <p>Relax by the beach and enjoy a peaceful escape.</p>
+            </div>
+        </article>
+
+        <article class="item">
+            <img class="photo" src="{% static 'hotels/images/ocean-breeze.jpg' %}" alt="Ocean Breeze Resort">
+            <div class="details">
+                <h3>Ocean Breeze Resort</h3>
+                <p>Location: San Fernando, La Union</p>
+                <p>A relaxing place for family and friends.</p>
+            </div>
+        </article>
+
+        <article class="item">
+            <img class="photo" src="{% static 'hotels/images/city-lights.jpg' %}" alt="City Lights Hotel">
+            <div class="details">
+                <h3>City Lights Hotel</h3>
+                <p>Location: Manila</p>
+                <p>Modern rooms in the heart of the city.</p>
+            </div>
+        </article>
+
+        <article class="item">
+            <img class="photo" src="{% static 'hotels/images/mountain-view.jpg' %}" alt="Mountain View Inn">
+            <div class="details">
+                <h3>Mountain View Inn</h3>
+                <p>Location: Tagaytay</p>
+                <p>Fresh air, cool weather, and a relaxing stay.</p>
+            </div>
+        </article>
+
     </div>
 </section>
+
+
+
 {% endblock %}

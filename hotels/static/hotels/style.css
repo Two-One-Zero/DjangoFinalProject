@@ -15,18 +15,25 @@ html, body {
 }
 #main {
     overflow:auto;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 #footer {
-   background-color: burlywood;
+   background-color: pink;
    position: relative;
    height: 50px;
    margin-top: -50px;
    clear:both;
    text-align: center;
    
-   padding: 10px;
+   padding: 20px;
 }
+
+#navbar {
+    background-color: pink;
+    /* padding: 10px 8%; */
+    text-align: right;
+}
+
 
 
 body {
@@ -65,16 +72,21 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
-}
+} 
 
 .hero {
+    color: white;
     padding: 60px 8%;
-    background: peachpuff;
+    background-image: url('images/sunset-hotel.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero h1 {
     font: 45px Georgia, serif;
     margin: 5px 0;
+    
 }
 
 .featured {
@@ -110,6 +122,12 @@ nav a {
 @media (max-width: 700px) {
     .hotel-grid {
         grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .photo {     
+        object-fit: cover;
+        display: block;
     }
 }
 
@@ -150,4 +168,47 @@ section {
 .hotel p {
     font-size: 14px;
     margin: 5px 0;
+}
+
+.location {
+    font-size: 14px;
+    color: saddlebrown;
+    margin: 5px 0;
+}
+
+.list {
+     display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 450px;   
+    margin: 0 auto;;
+}
+
+.item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;  
+}
+
+
+
+.details {
+    padding: 12px;
+}
+
+.details h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.details p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+#available {
+    text-align: center;
+    margin-top: 20px;  
 }
