@@ -20,7 +20,6 @@ Stay With Us is a simple hotel booking website developed using Django. It helps 
 - Django
 - HTML
 - CSS
-- SQLite
 
 ## How to Run the Project
 
